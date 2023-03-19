@@ -106,6 +106,7 @@ max-width: 50%;
     
 }
 .img{
+    height: 100%;
     content: url(images/image-product-desktop.jpg);
 }
 .background h2{
