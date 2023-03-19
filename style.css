@@ -106,7 +106,7 @@ max-width: 50%;
     
 }
 .img{
-    content: url(/images/image-product-desktop.jpg);
+    content: url(images/image-product-desktop.jpg);
 }
 .background h2{
     font-size: 2.5rem;
