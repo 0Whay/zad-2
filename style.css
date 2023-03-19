@@ -1,29 +1,94 @@
 *{  
-    
     box-sizing: border-box;
-    border: 1px red solid;
+    margin: 0;
+    padding: 0;
 }
 main{
     display: grid;
-    width: 100%;
-    min-height: 100vh;
+    width: 90%;
+    height: auto;
+    margin: 5%;
+    border-radius: 1rem;
+    overflow: hidden;
 }
+
 body{
-    
     font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: hsl(30, 38%, 92%);
-    margin: 0;
-    padding: 20px;
-    
-}
-.background{
-    
-    width: 50%;
-    border-radius: 2rem;
-    background-color: white;
 }
 .img {
-    width: fit-content;
+    width: 100%;
+    height: auto;
+    content: url(images/image-product-mobile.jpg);
+}
+.background{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+.background h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 1rem;
+}
+.background h2{
+    font-size: 1.8rem;
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+
+}
+.background p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5rem;
+}
+
+.cena
+{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.cena :nth-child(1){
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+
+}
+.cena :nth-child(2){
+    color: hsl(228, 12%, 48%);
+    font-size: 0.8rem;
+    text-decoration: line-through;
+    margin-left: 1.5rem;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 1rem;
+}
+.button p{
+    color: white;
+    margin-left: 1rem;
+    font-weight: 700;
 }
 
 .attribution{
@@ -32,6 +97,35 @@ body{
 .attribution a{
     text-decoration: none;
     color: hsl(228, 45%, 44%);
+}
+@media (min-width:400px) {
+main{
+grid-template-columns: 1fr 1fr;
+max-width: 50%;
+    
+}
+.img{
+    content: url(/images/image-product-desktop.jpg);
+}
+.background h2{
+    font-size: 2.5rem;
+}
+
+.background p{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.cena{
+    margin: 2rem 0;
+    
+
+
+
+
+    
+}
+
 }
 /* 
 font-family: 'Fraunces', serif;
